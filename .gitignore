@@ -1,0 +1,4 @@
+.DS_Store
+.impeccable/
+.taste-skill/*
+!.taste-skill/direction.json

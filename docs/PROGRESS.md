@@ -1,0 +1,31 @@
+# PROGRESS
+
+| Task (KICKOFF) | Status |
+|---|---|
+| T0 Owner decisions | not started |
+| T1 Repository skeleton | not started |
+| T2 Design direction | done — design-taste-frontend, `.taste-skill/direction.json` |
+| T3 Registration | in progress — page built; fallback contact and form sign-in setting open |
+| T4 Milestones | in progress — 2025 and 2023 entries |
+| T5 Home, 404, sharing | in progress — `og:image` needs the live URL |
+| T6 Deploy and launch | not started |
+
+Live URL: — (not deployed)
+
+## Log
+
+Newest first. One entry per merged change: what changed, the checks run, anything deferred.
+
+- 2026-11-04 — **Hero ticket, favicon, OG poster.** The Home hero is now a paper ticket in the style of the editions sheet (scalloped edges, Date / Time / Place rows): "PANAGHIUSA" on one line, a live countdown (days, hours, minutes, seconds; without JS it shows the start time as text) and a tear-off stub with a large "Register for 2026" button and the fallback line next to it. The 2026 / 2025 / 2023 switcher is gone (the past editions stay in the sheet and on Milestones). Favicon from the MAS AMiCUS logo (`favicon.ico` 16/32/48, `assets/icons/apple-touch-icon.png`). OG poster `assets/img/og/panaghiusa-2026.jpg` (1200×630; its HTML source is `.taste-skill/og.html`, not committed) linked from every page. CSS and JS links carry `?v=` to beat the Pages cache. Checks: html-validate clean, linkinator clean, `lint.mjs` 0 FAIL, `inspect.mjs` 0 FAIL on all three pages. Deferred: `og:image` is relative until the live URL is known; Facebook and Messenger need it absolute.
+
+- 2026-11-04 — **2026 details, countdown, hero fix; docs moved to design-taste-frontend.** Owner gave the 2026 edition: Sunday 29 November 2026, 5:00–8:00 PM, Pearlmont Hotel, Cagayan de Oro City (source comment in `index.html`). Added it to Home (card, letter stub, editions sheet, reply band, footer), `register.html` (head and open state) and the meta descriptions. The hero card no longer pins on scroll; it sits over the hall photo with the date, time, venue and a live countdown (`role="timer"`, `data-ui`, hidden without JS, switches to "Happening now" at 5:00 PM and a thank-you after 8:00 PM). `AGENTS.md`, `docs/UI.md`, `docs/PLAN.md`, `docs/KICKOFF.md`, `docs/DEPLOY.md`, `PRODUCT.md` and `docs/MILESTONES.md` now name design-taste-frontend as the design process. Checks: html-validate clean, linkinator clean, `lint.mjs` 0 FAIL (3 WARN: zero-padded clock digits), `inspect.mjs` 0 FAIL on all three pages (WARN: no footage). Deferred: 2026 cause and fee, named fallback contact, `og:image`, CI workflow.
+
+- 2026-11-04 — **Home, Register, Milestones and 404 built with design-taste-frontend.** The owner dropped the impeccable quilt direction and chose a fresh taste-skill build: direction "The page is the object" (seed 1883615129), Bricolage Grotesque (self-hosted, two woff2 files), palette from the alumni shirt. Home is a programme card over the venue hall ("PANAG HIU SA" from the shirt print) with an edition switcher (2026 / 2025 / 2023, progressive enhancement), a pinned card on desktop, a letter, the editions sheet, a photo gallery, a reply card and a postcard footer. `register.html` keeps the form link, the `data-registration` states and the privacy summary before the Register link. `milestones.html` has the 2025 and 2023 entries with source notes. Photos are WebP in `assets/img/gallery/`. Checks: html-validate clean, linkinator clean, taste `lint.mjs` clean, `inspect.mjs` 0 FAIL on all three pages. Deferred: 2026 date, venue, cause and fee (TODO(owner) in `index.html` and `register.html`); named fallback contact; `og:image` (needs the final absolute URL); CI workflow (T1); `AGENTS.md` invariant 10 and `docs/UI.md` still name impeccable as the design process.
+
+- 2026-11-04 — **Registration form link.** The public responder link is in `register.html` only. Opening it in a signed-out browser stopped at a Google sign-in page, so the form is not yet reachable without a Google account.
+
+- 2026-11-04 — **Registration moves to Google Forms (PLAN §5 Q4).** `register.html` will link out to an organizer-owned Google Form with a linked response Sheet; no Apps Script, custom form or `register.js`. Rewrote `docs/REGISTRATION.md`; updated `AGENTS.md` (invariants 1–5, 8, gotchas), `docs/PLAN.md`, `docs/DEPLOY.md`, `docs/KICKOFF.md`, `docs/UI.md`, `PRODUCT.md`.
+
+- 2026-11-04 — **`/impeccable init`.** `PRODUCT.md` written from the planning docs plus owner answers: single recurring event; English with organizer-provided Cebuano phrases; logo, brand colors/fonts, consented photos and sourced numbers exist (not yet in repo); existing brand is a loose reference only. `.impeccable/config.json` records `buildPath: comp`. Still open in PLAN §5: one-line description and who runs it, next event details, domain, privacy law/contact.
+
+- 2026-11-04 — **Planning docs.** `AGENTS.md`, `docs/PLAN.md`, `docs/KICKOFF.md`, `docs/REGISTRATION.md`, `docs/MILESTONES.md`, `docs/UI.md`, `docs/DEPLOY.md`. No site code yet; T0 questions are open in PLAN §5.
