@@ -7,7 +7,7 @@
 | T2 Design direction | done — design-taste-frontend, `.taste-skill/direction.json` |
 | T3 Registration | in progress — page built; fallback contact and form sign-in setting open |
 | T4 Milestones | in progress — 2025 and 2023 entries |
-| T5 Home, 404, sharing | in progress — `og:image` needs the live URL |
+| T5 Home, 404, sharing | done — live at https://panaghiusa.info/ |
 | T6 Deploy and launch | not started |
 
 Live URL: — (not deployed)
@@ -15,6 +15,8 @@ Live URL: — (not deployed)
 ## Log
 
 Newest first. One entry per merged change: what changed, the checks run, anything deferred.
+
+- 2026-11-04 — **Share metadata fixed for the live domain.** The site is live at `https://panaghiusa.info/` (`CNAME`). `og:image`, `twitter:image` and `og:url` are now absolute (the relative poster link failed to fetch), and every page has `og:site_name`. Titles are 60 characters or fewer, descriptions 155 or fewer, and `og:description` 125 or fewer. The absolute-URL exception is recorded in `AGENTS.md` invariant 7 and the `docs/DEPLOY.md` checklist.
 
 - 2026-11-04 — **Countdown runs when a page is opened from disk.** `site.js` is now a classic `defer` script instead of `type="module"`. Chrome blocks module scripts on `file://`, so the hero showed only the static start time. `AGENTS.md` conventions updated. Checked: countdown ticks from `file://` and from `http://`; html-validate clean.
 

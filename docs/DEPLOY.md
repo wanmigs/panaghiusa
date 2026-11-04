@@ -35,6 +35,7 @@ Protect `main` (**Settings → Branches**): require the `check` workflow to pass
 ## 6. Launch checklist
 
 - [ ] All pages load on the real Pages URL (or custom domain) with HTTPS
+- [ ] `og:image`, `og:url` and `twitter:image` use the live domain (`https://panaghiusa.info/`), and a link-preview checker shows the poster
 - [ ] Real registration from a phone on mobile data, via the site's Register link, appears in the form's response Sheet (then delete it from the form and the Sheet)
 - [ ] Shared link in Messenger / Facebook shows the OG title, description and image
 - [ ] 404 page shows for a mistyped URL
