@@ -16,6 +16,10 @@ Live URL: — (not deployed)
 
 Newest first. One entry per merged change: what changed, the checks run, anything deferred.
 
+- 2026-11-04 — **Click-to-zoom photo viewer.** The content photos on Home, Register and Milestones link to their largest file. `site.js` opens them in a full-screen `<dialog>`: the photo fit to the screen (click it to zoom 2× and pan by scrolling), the caption, a collapsed "More details" (the alt text plus an optional `data-details` note on the `<figure>`), and Close. It closes with Close, Escape or a click on the scrim, and focus returns to the photo. Only the House of Hope photo has a `data-details` note so far (from the 2025 poster and owner answers). How to add one is in `docs/UI.md` §4. Checks: html-validate clean, linkinator clean, `lint.mjs` 0 FAIL, `inspect.mjs` 0 FAIL on all three pages.
+
+- 2026-11-04 — **MAS AMiCUS logo on the Home letter.** The round House of Hope photo above "One night a year, for a cause" is now the MAS AMiCUS logo (`assets/icons/mas-amicus-logo.webp`, dark ink on transparent, 6rem wide). html-validate clean.
+
 - 2026-11-04 — **Share metadata fixed for the live domain.** The site is live at `https://panaghiusa.info/` (`CNAME`). `og:image`, `twitter:image` and `og:url` are now absolute (the relative poster link failed to fetch), and every page has `og:site_name`. Titles are 60 characters or fewer, descriptions 155 or fewer, and `og:description` 125 or fewer. The absolute-URL exception is recorded in `AGENTS.md` invariant 7 and the `docs/DEPLOY.md` checklist.
 
 - 2026-11-04 — **Countdown runs when a page is opened from disk.** `site.js` is now a classic `defer` script instead of `type="module"`. Chrome blocks module scripts on `file://`, so the hero showed only the static start time. `AGENTS.md` conventions updated. Checked: countdown ticks from `file://` and from `http://`; html-validate clean.

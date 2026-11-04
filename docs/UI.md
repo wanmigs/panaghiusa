@@ -37,6 +37,7 @@ Reprint the full sheet with `node .agents/skills/design-taste-frontend/scripts/d
 - Lead with **real photos from past events** — they're the proof the milestones page exists to give. No stock photos of strangers, no generic illustrations.
 - Warm and communal rather than corporate. Respect the cultural context in `PRODUCT.md`; avoid motifs that caricature it.
 - The house rules in `SKILL.md` apply without exception: no eyebrow labels, no monospace, no hairline rules, no gradients, no shadows at rest, headlines two lines or fewer at every width.
+- **Photo viewer.** Every content photo sits in a `<figure>` as `<a class="zoom" href="…-<largest>.webp"><img …></a>`, so without JS the link opens the full-size file. `site.js` turns it into a dialog with the caption, a collapsed **More details** (the `alt` text), and an optional organizer note from `data-details` on the `<figure>`. Leave `data-details` off when there's nothing sourced to add. Its facts follow the same sourcing rule as milestones (`AGENTS.md` invariant 6). Decorative images (the hero background, the footer stamp) don't get the link.
 
 ## 5. Quality floor (blocks merge)
 
