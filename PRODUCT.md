@@ -51,7 +51,7 @@ The proof is the past editions themselves: real photos, real places, organizer-s
 
 ## Evidence on Hand
 
-In `assets/photos/` (originals, not yet optimized; edition per photo unconfirmed, so no year captions):
+The owner's original photo set (optimized into `assets/img/`; the full-size originals were removed from the repo on 2026-11-04 and remain in git history):
 
 - Large group photos: green alumni shirts with a "MAS AMiCUS Alumni CDO District" banner outside House of Hope Foundation, Lumbia; two formal year-end gala group photos (gowns and suits, balloon backdrops).
 - Venue: a hall with carved-wood paneling, a balloon arch and a "CDO MAS AMICUS ALUMNI PANAGHIUSA" sign.

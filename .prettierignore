@@ -1,0 +1,2 @@
+# html-validate (CI) rejects the self-closing void tags Prettier writes.
+*.html

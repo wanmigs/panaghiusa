@@ -19,7 +19,7 @@ The direction was dealt once (2026-11-04) and is the art direction for every pag
 
 - **Direction:** "The page is the object" (seed 1883615129). The object is the alumni shirt's split print, "PANAG / HIU / SA", set as the title of a programme card.
 - **Type:** Bricolage Grotesque, self-hosted (`assets/fonts/`, two woff2 files), five size steps (`--step-small` … `--step-display`).
-- **Colour:** the dealt proportions, with colours taken from the shirt: dark green ground, shirt-green card, bone paper and ink, a sage field.
+- **Colour:** black and gold (owner's choice, 2026-11-04), in the dealt proportions: a near-black ground (`--bg #0d0c0a`), bone paper and ink (`--paper #e2ddd0`, `--paper-ink #15120c`), and gold (`--gold #c9a44c`) as the one accent field: the editions band, the reply band, a tile strip, the countdown digits. Text on gold is always `--gold-ink`. Keep the paper low-chroma: a lighter, yellower cream trips the inspector's `palette-cream` rule.
 - **Sections:** programme card hero → letter → editions sheet → photo tiles with label strips → reply card → postcard footer.
 
 Reprint the full sheet with `node .agents/skills/design-taste-frontend/scripts/draw.mjs --show` (it reads `.taste-skill/direction.json`, which is committed).
@@ -38,6 +38,7 @@ Reprint the full sheet with `node .agents/skills/design-taste-frontend/scripts/d
 - Warm and communal rather than corporate. Respect the cultural context in `PRODUCT.md`; avoid motifs that caricature it.
 - The house rules in `SKILL.md` apply without exception: no eyebrow labels, no monospace, no hairline rules, no gradients, no shadows at rest, headlines two lines or fewer at every width.
 - **Photo viewer.** Every content photo sits in a `<figure>` as `<a class="zoom" href="…-<largest>.webp"><img …></a>`, so without JS the link opens the full-size file. `site.js` turns it into a dialog with the caption, a collapsed **More details** (the `alt` text), and an optional organizer note from `data-details` on the `<figure>`. Leave `data-details` off when there's nothing sourced to add. Its facts follow the same sourcing rule as milestones (`AGENTS.md` invariant 6). Decorative images (the hero background, the footer stamp) don't get the link.
+- **Photo albums.** An edition with several photos shows a stack of three instant-film prints: `<a class="stack" href="#album-<slug>" data-album="album-<slug>">` with three `.stack__card` spans (the last one sits on top), followed by `<ul class="album" id="album-<slug>" data-title="…">`, then the note `<figcaption class="stack__note">`. Each `<li>` is `<a href="…-<largest>.webp" data-caption="…" data-width data-height><img … alt="…"></a>`. Without JS the list shows as a plain grid of links. With JS, the stack opens a dialog: a grid of the photos, and a click on one switches to a slide view with Previous and Next (arrow keys and swipe work too), an **All photos** link and Escape back to the grid, and Close. A portrait photo shown in the 4:3 frames can take `class="crop-low"` on its `<img>` to keep the lower part (people, banners) in frame.
 
 ## 5. Quality floor (blocks merge)
 
