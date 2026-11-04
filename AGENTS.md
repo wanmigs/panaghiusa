@@ -61,7 +61,7 @@ Every PR must pass the checks above. There is no `package.json`; tools run throu
 
 - Semantic HTML first: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<time datetime>`, `<form>`, `<fieldset>`. One `<h1>` per page; no skipped heading levels.
 - CSS: one `assets/css/site.css`, custom properties for the tokens from the direction sheet, mobile-first, `rem` for type, logical properties. No CSS framework.
-- JavaScript: only if a page genuinely needs it — one small ES module per page, loaded with `type="module"`. No dependencies. Progressive enhancement only; no page needs JS to work.
+- JavaScript: only if a page genuinely needs it — one small shared script (`assets/js/site.js`), loaded with `defer`, not `type="module"` (module scripts don't run when a page is opened from disk, so the preview breaks). No dependencies. Progressive enhancement only; no page needs JS to work.
 - Shared header/footer are copied into each page (three pages don't justify a templating step). When you change one, change all — the PR checklist in `docs/UI.md` §6 says so.
 - Every page has `<title>`, `<meta name="description">`, Open Graph tags (shared links are the main traffic source) and `lang` on `<html>`.
 - Images: `assets/img/<event-slug>/…`, file names in `kebab-case`, meaningful `alt` text (or `alt=""` for pure decoration).
