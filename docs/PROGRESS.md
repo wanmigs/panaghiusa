@@ -14,6 +14,8 @@ Live URL: — (not deployed)
 
 ## Log
 
+- 2026-11-06 — **2026 venue set to TBA.** The owner withdrew Pearlmont Hotel for this edition. Home (hero, letter, editions sheet, reply card), Register, the Milestones footer, the countdown’s “happening now” line, and the share poster now say the venue is TBA. Past editions that were held at Pearlmont stay named. The poster was re-rendered and the image URL bumped to `?v=5`.
+
 - 2026-11-05 — **Home letter rewritten.** "One Night a Year, United for a Cause" now carries the owner's text verbatim: begun in 2021, past causes, the 2025 House of Hope and Samay SDA Church help, and the 2026 cause (a church's Smart TV, plus recreational equipment and supplies for a rehabilitation center in Balingasag), highlighted. Open: the rest of the site still calls 2022 "the first Panaghiusa"; the cause TODOs on Home and Register are not yet filled from this text.
 
 - 2026-11-04 — **Unused images removed.** The nine full-size originals in `assets/photos/` (about 2.2 MB) were not referenced by any page, stylesheet or script; the site uses the optimized copies in `assets/img/`. They are deleted from the repo (still in git history), and `PRODUCT.md` and the consent comments in `milestones.html` now point to "the owner's original photo set". Every other image in `assets/` is in use.

@@ -39,8 +39,8 @@ The proof is the past editions themselves: real photos, real places, organizer-s
 - The form asks only the questions in `docs/REGISTRATION.md` §2, without requiring Google sign-in; privacy summary on the page before the Register link and in the form; no analytics.
 - Performance budget: ≤ 200 KB HTML+CSS+JS gzip per page, AVIF/WebP images, at most two web font files, no carousels or autoplay video.
 - Language: English, with Cebuano/Bisaya phrases only where the organizers provide them. Never machine-translate or invent Cebuano copy.
-- Panaghiusa 2026: Sunday 29 November 2026, 5:00–8:00 PM, Pearlmont Hotel, Cagayan de Oro City.
-- Undecided (owner to supply, `docs/PLAN.md` §5): Panaghiusa 2026's cause, fee and inclusions, deadline and contact person; domain; applicable privacy law and data contact; which edition each photo is from.
+- Panaghiusa 2026: Sunday 29 November 2026, 5:00–8:00 PM. Venue TBA (the owner withdrew Pearlmont Hotel on 2026-11-06).
+- Undecided (owner to supply, `docs/PLAN.md` §5): Panaghiusa 2026's venue, cause, fee and inclusions, deadline and contact person; applicable privacy law and data contact.
 
 ## Brand Commitments
 

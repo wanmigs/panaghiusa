@@ -19,7 +19,7 @@ function countdown() {
       return;
     }
     if (now >= start) {
-      lead.textContent = "Happening now at Pearlmont Hotel.";
+      lead.textContent = "Happening now.";
       cells.hidden = true;
       return;
     }
