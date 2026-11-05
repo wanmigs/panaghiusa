@@ -14,6 +14,8 @@ Live URL: — (not deployed)
 
 ## Log
 
+- 2026-11-05 — **Home letter rewritten.** "One Night a Year, United for a Cause" now carries the owner's text verbatim: begun in 2021, past causes, the 2025 House of Hope and Samay SDA Church help, and the 2026 cause (a church's Smart TV, plus recreational equipment and supplies for a rehabilitation center in Balingasag), highlighted. Open: the rest of the site still calls 2022 "the first Panaghiusa"; the cause TODOs on Home and Register are not yet filled from this text.
+
 - 2026-11-04 — **Unused images removed.** The nine full-size originals in `assets/photos/` (about 2.2 MB) were not referenced by any page, stylesheet or script; the site uses the optimized copies in `assets/img/`. They are deleted from the repo (still in git history), and `PRODUCT.md` and the consent comments in `milestones.html` now point to "the owner's original photo set". Every other image in `assets/` is in use.
 
 - 2026-11-04 — **Panaghiusa 2022 album.** The owner's 12 photos of the first Panaghiusa (`assets/img/panaghiusa-2022/`, 480 and 1024 px) and the existing black and gold group photo now form a 13-photo stack-and-album on Milestones, like the other editions. The group photo is on top of the stack and first in the album. Captions only describe what is visible; no sash titles or names are given. Deferred: TODO(owner) to confirm consent.
