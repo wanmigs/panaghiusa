@@ -50,7 +50,7 @@ Record answers here (replace the default column) with the date decided.
 Answered so far (2026-11-04):
 
 - **Q1:** the yearly gathering of the CDO MAS-AMiCUS Alumni in Cagayan de Oro; every edition is for a cause. Paid registration (2025: ₱999 with shirt and dinner); payment via GCash / GoTyme outside the site, reference number collected in the form.
-- **Q2 (partial):** Panaghiusa 2026 is on Sunday 29 November 2026, 5:00–8:00 PM (Philippine time, UTC+8). The owner withdrew the Pearlmont Hotel venue on 2026-11-06; the venue is TBA. Still pending: venue, cause, fee and inclusions, capacity, registration close date.
+- **Q2 (partial):** Panaghiusa 2026 is on Sunday 29 November 2026, 5:00–9:00 PM (Philippine time, UTC+8). The owner withdrew the Pearlmont Hotel venue and extended the end time to 9:00 PM on 2026-11-06; the venue is TBA. Still pending: venue, cause, fee and inclusions, capacity, registration close date.
 - **Q5:** English, with Cebuano/Bisaya phrases only where the organizers provide them.
 - **Q8 (partial):** consented photos and organizer-sourced numbers exist; not yet handed over.
 - **Q9:** a logo and brand colors/fonts exist; treat them as a loose reference — the web direction is open.
