@@ -14,6 +14,8 @@ Live URL: — (not deployed)
 
 ## Log
 
+- 2026-11-20 — **2026 is 6:00–10:00 PM at Country Village Hotel.** The owner set the start and end time and named the venue. Home (ticket, letter, editions sheet, reply card, countdown), Register, the Milestones footer and the share poster now say 6:00–10:00 PM at Country Village Hotel. The countdown runs from `18:00` to `22:00` Philippine time. The poster URL is `?v=7`.
+
 - 2026-11-06 — **2026 runs until 9:00 PM.** The owner extended the end time. Home, Register, the Milestones footer, the countdown end (`21:00` Philippine time) and the share poster now say 5:00–9:00 PM. The poster URL is `?v=6`.
 
 - 2026-11-06 — **2026 venue set to TBA.** The owner withdrew Pearlmont Hotel for this edition. Home (hero, letter, editions sheet, reply card), Register, the Milestones footer, the countdown’s “happening now” line, and the share poster now say the venue is TBA. Past editions that were held at Pearlmont stay named. The poster was re-rendered and the image URL bumped to `?v=5`.
